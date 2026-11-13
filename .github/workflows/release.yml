@@ -48,7 +48,7 @@ jobs:
           name: ${{ github.ref_name }}
           tag_name: ${{ github.ref_name }}
           body_path: release-notes.md
-          files: CHANGELOG.md
+          files: CHANGELOG.md 
           fail_on_unmatched_files: true
           # RC tags must not replace the latest stable release.
           prerelease: ${{ contains(github.ref_name, '-') }}
